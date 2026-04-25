@@ -1,0 +1,12 @@
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        reversed_n = 0
+        for _ in range(32):
+            reversed_n = reversed_n << 1
+            # get the last bit
+            bit = n & 1
+            reversed_n = reversed_n | bit
+            n = n >> 1
+        return reversed_n
+            
+        
