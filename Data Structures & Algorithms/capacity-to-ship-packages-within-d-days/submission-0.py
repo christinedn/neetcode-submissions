@@ -24,7 +24,7 @@ class Solution:
         return res
 
 
-        # wrong
+        # wrong, the below will mistakenly skip elements. must check if the next days package can be shipped before adding
         # d = 0
         # curr_weight = 0
         # for w in weights:
